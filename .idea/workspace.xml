@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb7db2dc-24cd-4f16-a96f-2362d3dacf06" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/PersonaController.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/PersonaController.java" />
-    </list>
+    <list default="true" id="fb7db2dc-24cd-4f16-a96f-2362d3dacf06" name="Default" comment="" />
     <ignored path="demo.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
