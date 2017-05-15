@@ -1,0 +1,81 @@
+<div ng-include="'/app/Templates/templatePatient.html'"></div>
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Bienvenido {{personaH.name}}</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+	<div class="row">
+		<br>
+		<h2>Registros de AvancesJuegos</h2>
+		<br>
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    TiempoSegundos
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="tiempoSegundosAvancesJuegos" class="chart chart-bar"
+	    	chart-data="tiempoSegundosAvancesJuegos" chart-labels="labelsAvancesJuegos" chart-series="seriesAvancesJuegos">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    NumeroPreguntasIntentos
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="numeroPreguntasIntentosAvancesJuegos" class="chart chart-bar"
+	    	chart-data="numeroPreguntasIntentosAvancesJuegos" chart-labels="labelsAvancesJuegos" chart-series="seriesAvancesJuegos">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    NumeroPreguntasAciertos
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="numeroPreguntasAciertosAvancesJuegos" class="chart chart-bar"
+	    	chart-data="numeroPreguntasAciertosAvancesJuegos" chart-labels="labelsAvancesJuegos" chart-series="seriesAvancesJuegos">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    NivelMaximoAlcanzado
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="nivelMaximoAlcanzadoAvancesJuegos" class="chart chart-bar"
+	    	chart-data="nivelMaximoAlcanzadoAvancesJuegos" chart-labels="labelsAvancesJuegos" chart-series="seriesAvancesJuegos">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	</div>
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+
