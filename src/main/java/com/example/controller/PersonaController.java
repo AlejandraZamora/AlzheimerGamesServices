@@ -56,17 +56,13 @@ public class PersonaController {
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin
     @RequestMapping(method = RequestMethod.POST,path = "/{personId}/newgame")
-    public ResponseEntity<?> postNewGame(HttpServletResponse response, @RequestBody AvanceJuego a, @PathVariable Long personId) {
+    public ResponseEntity<?> postNewGame(@RequestBody AvanceJuego a, @PathVariable Long personId) {
         Persona p=ps.getPersona(personId);
         List ng= p.getAvancesJuegos();
         ng.add(a);
         p.setAvancesJuegos(ng);
-        response.setHeader("Access-Control-Allow-Origin", "http://localhost:8080");
-        response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
-        response.setHeader("Access-Control-Max-Age", "3600");
-        response.setHeader("Access-Control-Allow-Headers", "x-requested-with");
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 }
