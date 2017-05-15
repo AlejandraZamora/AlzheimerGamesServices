@@ -1,14 +1,17 @@
 package com.example.controller;
 
+import com.example.model.AvanceJuego;
 import com.example.model.Persona;
 import com.example.services.PersonaServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:8080", methods = {RequestMethod.PUT,RequestMethod.GET,RequestMethod.POST})
+@CrossOrigin(origins = "http://localhost:8080")
 @RestController
 @RequestMapping(value = "/persona")
 public class PersonaController {
@@ -45,10 +48,20 @@ public class PersonaController {
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @CrossOrigin(origins = "http://localhost:8080", methods = RequestMethod.PUT)
+    @CrossOrigin(origins = "http://localhost:8080")
     @RequestMapping(method = RequestMethod.PUT)
     public ResponseEntity<?> updatePersona(@RequestBody Persona p) {
         ps.updatePersona(p);
+        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+    }
+
+    @CrossOrigin(origins = "http://localhost:8080")
+    @RequestMapping(method = RequestMethod.POST,path = "/{personId}/newgame")
+    public ResponseEntity<?> postNewGame(@RequestBody AvanceJuego a, @PathVariable Long personId) {
+        Persona p=ps.getPersona(personId);
+        List ng= p.getAvancesJuegos();
+        ng.add(a);
+        p.setAvancesJuegos(ng);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 }

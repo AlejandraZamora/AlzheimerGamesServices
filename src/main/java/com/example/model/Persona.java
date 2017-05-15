@@ -69,7 +69,7 @@ this.edad = edad;
 			public java.util.List<com.example.model.AvanceJuego> getAvancesJuegos() {
 			return avancesJuegos;
 			}
-			public void setAvancesJuegos(java.util.ArrayList<com.example.model.AvanceJuego> avancesJuegos) {
+			public void setAvancesJuegos(java.util.List<com.example.model.AvanceJuego> avancesJuegos) {
 			this.avancesJuegos = avancesJuegos;
 			}
         }
