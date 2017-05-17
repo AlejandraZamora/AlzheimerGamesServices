@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(value = "/persona")
 public class PersonaController {
@@ -20,7 +20,6 @@ public class PersonaController {
     @Autowired
     private PersonaServices ps;
 
-    @CrossOrigin(origins = "http://localhost:8080")
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> getPersonas(){
     	List<Persona> ans=ps.getPersonas();
@@ -31,7 +30,6 @@ public class PersonaController {
 		}
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
     @RequestMapping(method = RequestMethod.GET, path = "/{personaId}")
     public ResponseEntity<?> getPersona(@PathVariable Long personaId) {
 		Persona ans=ps.getPersona(personaId);
@@ -42,21 +40,19 @@ public class PersonaController {
 		}
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+
     @RequestMapping(method = RequestMethod.POST, path = "/new")
     public ResponseEntity<?> postPersona(@RequestBody Persona p) {
         ps.savePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
     @RequestMapping(method = RequestMethod.PUT)
     public ResponseEntity<?> updatePersona(@RequestBody Persona p) {
         ps.updatePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @CrossOrigin
     @RequestMapping(method = RequestMethod.POST,path = "/{personId}/newgame")
     public ResponseEntity<?> postNewGame(@RequestBody AvanceJuego a, @PathVariable Long personId) {
         Persona p=ps.getPersona(personId);
