@@ -20,7 +20,7 @@ public class PersonaController {
     @Autowired
     private PersonaServices ps;
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<?> getPersonas(){
     	List<Persona> ans=ps.getPersonas();
 		if(ans!=null){
@@ -30,7 +30,7 @@ public class PersonaController {
 		}
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "/{personaId}")
+    @RequestMapping(method = RequestMethod.GET, path = "/{personaId}", produces = "application/json")
     public ResponseEntity<?> getPersona(@PathVariable Long personaId) {
 		Persona ans=ps.getPersona(personaId);
 		if(ans!=null){
@@ -41,19 +41,19 @@ public class PersonaController {
     }
 
 
-    @RequestMapping(method = RequestMethod.POST, path = "/new")
+    @RequestMapping(method = RequestMethod.POST, path = "/new", produces = "application/json")
     public ResponseEntity<?> postPersona(@RequestBody Persona p) {
         ps.savePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @RequestMapping(method = RequestMethod.PUT)
+    @RequestMapping(method = RequestMethod.PUT, produces = "application/json")
     public ResponseEntity<?> updatePersona(@RequestBody Persona p) {
         ps.updatePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @RequestMapping(method = RequestMethod.POST,path = "/{personId}/newgame")
+    @RequestMapping(method = RequestMethod.POST,path = "/{personId}/newgame", produces = "application/json")
     public ResponseEntity<?> postNewGame(@RequestBody AvanceJuego a, @PathVariable Long personId) {
         Persona p=ps.getPersona(personId);
         List ng= p.getAvancesJuegos();
