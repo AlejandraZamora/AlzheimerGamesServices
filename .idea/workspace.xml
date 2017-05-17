@@ -2,186 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb7db2dc-24cd-4f16-a96f-2362d3dacf06" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/controller/PersonaController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/controller/UsersController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/demoApplication$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/demoApplication$SecurityConfiguration$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/demoApplication$SecurityConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/demoApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/jpa/GenericService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/jpa/PersonaRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/jpa/PersonaService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/jpa/exception/GenericServiceException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/model/AvanceJuego.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/model/Persona.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/services/PersonaServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/services/PersonaServicesImpl1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/services/PersonaServicesImpl2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/vo/ResponseVO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/Dockerfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/ISSUE_TEMPLATE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/PULL_REQUEST_TEMPLATE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/angular-chart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/dist/angular-chart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/dist/angular-chart.js.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/dist/angular-chart.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/dist/angular-chart.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/angular-chart.js/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/.codeclimate.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/.eslintignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/.github/ISSUE_TEMPLATE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/.github/PULL_REQUEST_TEMPLATE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/MAINTAINING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/config.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/docs/00-Getting-Started.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/docs/01-Chart-Configuration.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/docs/02-Scales.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/docs/03-Line-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/docs/04-Bar-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/docs/05-Radar-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/docs/06-Polar-Area-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/docs/07-Pie-Doughnut-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/docs/08-Bubble-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/docs/09-Advanced.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/docs/10-Notes.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/karma.conf.ci.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/karma.coverage.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/animation/progress-bar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/bar/bar-horizontal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/bar/bar-multi-axis.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/bar/bar-stacked.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/bar/bar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/bubble.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/combo-bar-line.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/data_labelling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/doughnut.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/legend/pointstyle.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/legend/positions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/line/different-point-sizes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/line/interpolation-modes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/line/line-multi-axis.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/line/line-skip-points.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/line/line-stacked-area.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/line/line-stepped.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/line/line-styles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/line/line.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/line/point-styles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/pie.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/polar-area.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/radar/radar-skip-points.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/radar/radar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/display-settings.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/filtering-labels.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/gridlines.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/line-non-numeric-y.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/linear/min-max-settings.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/linear/step-size.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/linear/suggested-min-max-settings.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/logarithmic/line-logarithmic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/logarithmic/scatter-logX.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/multiline-labels.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/time/combo-time-scale.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/time/line-time-point-data.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scales/time/line-time-scale.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scatter/scatter-multi-axis.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/scatter/scatter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/tooltips/dataPoints-customTooltips.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/tooltips/interaction-modes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/tooltips/line-customTooltips.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/tooltips/pie-customTooltips.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/tooltips/position-modes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/tooltips/tooltip-callbacks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/samples/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/scripts/release.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/chart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/charts/Chart.Bar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/charts/Chart.Bubble.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/charts/Chart.Doughnut.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/charts/Chart.Line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/charts/Chart.PolarArea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/charts/Chart.Radar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/charts/Chart.Scatter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/controllers/controller.bar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/controllers/controller.bubble.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/controllers/controller.doughnut.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/controllers/controller.line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/controllers/controller.polarArea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/controllers/controller.radar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.animation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.canvasHelpers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.datasetController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.element.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.helpers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.interaction.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.layoutService.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.legend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.scale.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.scaleService.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.ticks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.title.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/core/core.tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/elements/element.arc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/elements/element.line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/elements/element.point.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/elements/element.rectangle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/scales/scale.category.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/scales/scale.linear.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/scales/scale.linearbase.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/scales/scale.logarithmic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/scales/scale.radialLinear.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/src/scales/scale.time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/controller.bar.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/controller.bubble.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/controller.doughnut.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/controller.line.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/controller.polarArea.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/controller.radar.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/core.controller.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/core.datasetController.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/core.element.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/core.helpers.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/core.interaction.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/core.layoutService.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/core.legend.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/core.plugin.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/core.scaleService.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/core.title.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/core.tooltip.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/defaultConfig.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/element.arc.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/element.line.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/element.point.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/element.rectangle.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/mockContext.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/scale.category.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/scale.linear.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/scale.logarithmic.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/scale.radialLinear.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/test/scale.time.tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/app/bower_components/chart.js/thankyou.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/demoApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/demoApplication.java" />
     </list>
     <ignored path="demo.iws" />
@@ -206,11 +26,11 @@
       <file leaf-file-name="demoApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demoApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="47" column="78" selection-start-line="47" selection-start-column="78" selection-end-line="47" selection-end-column="78" />
+            <state relative-caret-position="240">
+              <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
               <folding>
-                <element signature="e#2131#2333#0" expanded="true" />
-                <element signature="e#2332#2333#0" expanded="true" />
+                <element signature="e#2131#2335#0" expanded="true" />
+                <element signature="e#2334#2335#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -966,8 +786,8 @@
         <state relative-caret-position="90">
           <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
-            <element signature="e#2131#2333#0" expanded="true" />
-            <element signature="e#2332#2333#0" expanded="true" />
+            <element signature="e#2131#2335#0" expanded="true" />
+            <element signature="e#2334#2335#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1054,11 +874,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="47" column="78" selection-start-line="47" selection-start-column="78" selection-end-line="47" selection-end-column="78" />
+        <state relative-caret-position="240">
+          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
           <folding>
-            <element signature="e#2131#2333#0" expanded="true" />
-            <element signature="e#2332#2333#0" expanded="true" />
+            <element signature="e#2131#2335#0" expanded="true" />
+            <element signature="e#2334#2335#0" expanded="true" />
           </folding>
         </state>
       </provider>
