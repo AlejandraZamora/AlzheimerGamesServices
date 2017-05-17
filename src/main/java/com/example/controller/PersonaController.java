@@ -53,12 +53,9 @@ public class PersonaController {
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @RequestMapping(method = RequestMethod.POST,path = "/{personId}/newgame", produces = "application/json")
-    public ResponseEntity<?> postNewGame(@RequestBody AvanceJuego a, @PathVariable Long personId) {
-        Persona p=ps.getPersona(personId);
-        List ng= p.getAvancesJuegos();
-        ng.add(a);
-        p.setAvancesJuegos(ng);
+    @RequestMapping(method = RequestMethod.POST, produces = "application/json")
+    public ResponseEntity<?> postNewGame(@RequestBody Persona p) {
+        ps.updatePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 }
