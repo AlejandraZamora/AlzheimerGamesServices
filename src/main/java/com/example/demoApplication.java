@@ -51,6 +51,14 @@ public class demoApplication {
 		};
 	}
 
+	@Configuration
+	public class RestSecurityConfig extends WebSecurityConfigurerAdapter {
+		@Override
+		protected void configure(HttpSecurity http) throws Exception {
+			http.csrf().disable();
+		}
+	}
+
 
 	@Configuration
 	@EnableGlobalMethodSecurity(prePostEnabled = true)

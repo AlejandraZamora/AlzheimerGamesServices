@@ -26,8 +26,8 @@
       <file leaf-file-name="demoApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demoApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="71" column="73" selection-start-line="71" selection-start-column="73" selection-end-line="71" selection-end-column="73" />
+            <state relative-caret-position="270">
+              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
               <folding>
                 <element signature="e#2175#2379#0" expanded="true" />
                 <element signature="e#2378#2379#0" expanded="true" />
@@ -874,8 +874,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="71" column="73" selection-start-line="71" selection-start-column="73" selection-end-line="71" selection-end-column="73" />
+        <state relative-caret-position="270">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
           <folding>
             <element signature="e#2175#2379#0" expanded="true" />
             <element signature="e#2378#2379#0" expanded="true" />
