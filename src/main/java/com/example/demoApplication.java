@@ -80,7 +80,6 @@ public class demoApplication {
 					.and()
 					.authorizeRequests()
 					.antMatchers("/app/**","/logout","/app/user**", "/persona/**").permitAll()
-					.antMatchers(HttpMethod.PUT, "/persona/").permitAll()
 					.anyRequest().authenticated().and()
 					.logout().logoutSuccessUrl("/")
 					.and()
