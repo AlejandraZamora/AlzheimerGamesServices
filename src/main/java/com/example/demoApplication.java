@@ -74,6 +74,7 @@ public class demoApplication {
 
 		@Override
 		protected void configure(HttpSecurity http) throws Exception {
+			http.csrf().disable().cors().disable();
 			http
 					.httpBasic()
 					.and()
@@ -82,9 +83,7 @@ public class demoApplication {
 					.antMatchers(HttpMethod.PUT, "/persona/").permitAll()
 					.anyRequest().authenticated().and()
 					.logout().logoutSuccessUrl("/")
-					.and().csrf()
-					.csrfTokenRepository(csrfTokenRepository()).and()
-					.addFilterAfter(csrfHeaderFilter(), CsrfFilter.class)
+					.and()
 					.formLogin()
 					.loginPage("/app/index.html");
 		}
