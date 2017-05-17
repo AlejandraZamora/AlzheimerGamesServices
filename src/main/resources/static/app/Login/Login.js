@@ -81,7 +81,7 @@ angular.module('myApp.Login', ['ngRoute'])
 	                         );
 	                      } else {
 	                          $scope.error = true;
-	                          alert("Autenticación Fallida");
+	                          alert("Autenticaciï¿½n Fallida");
 	                          $rootScope.logout();
 	                      }
 	                  });
