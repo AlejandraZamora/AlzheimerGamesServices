@@ -67,7 +67,7 @@ public class demoApplication {
 					.httpBasic()
 					.and()
 					.authorizeRequests()
-					.antMatchers("/app/**","/logout","/app/user**", "/persona/").permitAll()
+					.antMatchers("/app/**","/logout","/app/user**", "/persona/new").permitAll()
 					.anyRequest().authenticated().and()
 					.logout().logoutSuccessUrl("/")
 					.and().csrf()
