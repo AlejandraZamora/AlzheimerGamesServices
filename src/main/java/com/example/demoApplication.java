@@ -50,7 +50,7 @@ public class demoApplication {
 			}
 		};
 	}
-
+	/**
 	@Configuration
 	public class RestSecurityConfig extends WebSecurityConfigurerAdapter {
 		@Override
@@ -58,9 +58,9 @@ public class demoApplication {
 			http.csrf().disable();
 		}
 	}
+	*/
 
 
-	
 
 	@Configuration
 	@EnableGlobalMethodSecurity(prePostEnabled = true)
