@@ -49,7 +49,7 @@ public class demoApplication {
 			@Override
 			public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
 				configurer.favorPathExtension(false).
-						defaultContentType(MediaType.APPLICATION_JSON_UTF8);
+						defaultContentType(MediaType.ALL);
 			}
 		};
 	}
