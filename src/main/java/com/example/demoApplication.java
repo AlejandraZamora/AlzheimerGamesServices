@@ -50,8 +50,6 @@ public class demoApplication {
 			public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
 				configurer.favorPathExtension(false).
 						defaultContentType(MediaType.APPLICATION_JSON).
-						mediaType("xml", MediaType.APPLICATION_XML).
-						mediaType("html", MediaType.TEXT_HTML).
 						mediaType("json", MediaType.APPLICATION_JSON);
 			}
 		};
