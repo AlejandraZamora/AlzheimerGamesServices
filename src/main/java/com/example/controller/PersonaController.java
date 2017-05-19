@@ -41,20 +41,19 @@ public class PersonaController {
 		}
     }
 
-
-    @RequestMapping(method = RequestMethod.POST, path = "/new", produces = "application/json", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(method = RequestMethod.POST, path = "/new", produces = "application/json", consumes = "application/json")
     public ResponseEntity<?> postPersona(@RequestBody Persona p) {
         ps.savePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @RequestMapping(method = RequestMethod.PUT, produces = "application/json", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(method = RequestMethod.PUT, produces = "application/json", consumes = "application/json")
     public ResponseEntity<?> updatePersona(@RequestBody Persona p) {
         ps.updatePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @RequestMapping(method = RequestMethod.POST, produces = "application/json", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
     public ResponseEntity<?> postNewGame(@RequestBody Persona p) {
         ps.updatePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
