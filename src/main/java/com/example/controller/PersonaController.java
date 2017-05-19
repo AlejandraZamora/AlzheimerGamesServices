@@ -41,19 +41,19 @@ public class PersonaController {
 		}
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = "/new", consumes = "text/plain")
+    @RequestMapping(method = RequestMethod.POST, path = "/new")
     public ResponseEntity<?> postPersona(@RequestBody Persona p) {
         ps.savePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @RequestMapping(method = RequestMethod.PUT, consumes = "text/plain")
+    @RequestMapping(method = RequestMethod.PUT)
     public ResponseEntity<?> updatePersona(@RequestBody Persona p) {
         ps.updatePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @RequestMapping(method = RequestMethod.POST, consumes = "text/plain")
+    @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> postNewGame(@RequestBody Persona p) {
         ps.updatePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
