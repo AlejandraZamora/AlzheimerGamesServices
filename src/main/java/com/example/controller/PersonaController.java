@@ -41,7 +41,7 @@ public class PersonaController {
 		}
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = "/new", produces = "application/json", consumes = "application/json")
+    @RequestMapping(method = RequestMethod.POST, path = "/new")
     public ResponseEntity<?> postPersona(@RequestBody Persona p) {
         ps.savePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
