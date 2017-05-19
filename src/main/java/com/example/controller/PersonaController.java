@@ -5,6 +5,7 @@ import com.example.model.Persona;
 import com.example.services.PersonaServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -41,19 +42,19 @@ public class PersonaController {
     }
 
 
-    @RequestMapping(method = RequestMethod.POST, path = "/new", produces = "application/json")
+    @RequestMapping(method = RequestMethod.POST, path = "/new", produces = "application/json", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> postPersona(@RequestBody Persona p) {
         ps.savePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @RequestMapping(method = RequestMethod.PUT, produces = "application/json")
+    @RequestMapping(method = RequestMethod.PUT, produces = "application/json", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> updatePersona(@RequestBody Persona p) {
         ps.updatePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @RequestMapping(method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(method = RequestMethod.POST, produces = "application/json", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> postNewGame(@RequestBody Persona p) {
         ps.updatePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
