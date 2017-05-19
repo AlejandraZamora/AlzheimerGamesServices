@@ -47,7 +47,7 @@ public class PersonaController {
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @RequestMapping(method = RequestMethod.PUT, produces = "application/json", consumes = "application/json")
+    @RequestMapping(method = RequestMethod.PUT)
     public ResponseEntity<?> updatePersona(@RequestBody Persona p) {
         ps.updatePersona(p);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
