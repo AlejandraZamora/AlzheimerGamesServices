@@ -3,6 +3,7 @@ package com.example.controller;
 import com.example.model.AvanceJuego;
 import com.example.model.Persona;
 import com.example.services.PersonaServices;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -10,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,9 +55,16 @@ public class PersonaController {
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @RequestMapping(method = RequestMethod.POST, consumes = "text/plain")
+    @RequestMapping(method = RequestMethod.POST, consumes = MediaType.TEXT_PLAIN_VALUE)
     public ResponseEntity<?> postNewGame(@RequestBody String p) {
-        //ps.updatePersona(p);
+        ObjectMapper mapper = new ObjectMapper();
+        Persona persona=null;
+        try {
+            persona=mapper.readValue(p, Persona.class);
+        } catch (IOException e) {
+            return new ResponseEntity<>(p, HttpStatus.BAD_REQUEST);
+        }
+        ps.updatePersona(persona);
         return new ResponseEntity<>(p, HttpStatus.ACCEPTED);
     }
 }
