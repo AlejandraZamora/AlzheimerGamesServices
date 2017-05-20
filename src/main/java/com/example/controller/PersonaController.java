@@ -53,7 +53,7 @@ public class PersonaController {
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
-    @RequestMapping(method = RequestMethod.POST, consumes = "text/plain)")
+    @RequestMapping(method = RequestMethod.POST, consumes = "text/plain")
     public ResponseEntity<?> postNewGame(@RequestBody String p) {
         //ps.updatePersona(p);
         return new ResponseEntity<>(p, HttpStatus.ACCEPTED);
