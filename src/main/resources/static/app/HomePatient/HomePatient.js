@@ -16,8 +16,18 @@ angular.module('myApp.HomePatient', ['ngRoute'])
                     //success
                     function( value ){
                         $scope.personaH=value;
+                        $scope.commentsHDiagnosticos=$scope.personaH.diagnosticos;
+                        if (typeof $scope.commentsHDiagnosticos == "undefined"){
+                            $scope.recomendacionesHDiagnosticos="No tienes ninguna recomendacion sobre Diagnosticos";
+                            $scope.cantHDiagnosticos=undefined;
+                        }
+                        if(typeof $scope.commentsHDiagnosticos != "undefined"){
+                            $scope.recomendacionesHDiagnosticos="Comentarios sobre Diagnosticos de tu medico!!";
+                            $scope.cantHDiagnosticos=$scope.commentsHDiagnosticos.length;
+                        }
 
 						$scope.diagnosticsHAvancesJuegos=$scope.personaH.avancesJuegos;
+                            $scope.idAvancesJuegos=[];
                             $scope.tiempoSegundosAvancesJuegos=[];
                             $scope.numeroPreguntasIntentosAvancesJuegos=[];
                             $scope.numeroPreguntasAciertosAvancesJuegos=[];
@@ -26,6 +36,7 @@ angular.module('myApp.HomePatient', ['ngRoute'])
 						$scope.seriesAvancesJuegos = ['Datos de Control AvancesJuegos'];
 						for(var n=0; n<$scope.diagnosticsHAvancesJuegos.length; n++){
 							var dd=$scope.diagnosticsHAvancesJuegos[n];
+	                            $scope.idAvancesJuegos.push(dd.id);
 	                            $scope.tiempoSegundosAvancesJuegos.push(dd.tiempoSegundos);
 	                            $scope.numeroPreguntasIntentosAvancesJuegos.push(dd.numeroPreguntasIntentos);
 	                            $scope.numeroPreguntasAciertosAvancesJuegos.push(dd.numeroPreguntasAciertos);
@@ -43,4 +54,7 @@ angular.module('myApp.HomePatient', ['ngRoute'])
                         alert("El Identificador no se encuentra registrado");
                     }
             );
+$scope.continueCSDiagnosticos=function(){
+	          	$location.path("CommentsViewDiagnosticos");
+	          	};
 }]);

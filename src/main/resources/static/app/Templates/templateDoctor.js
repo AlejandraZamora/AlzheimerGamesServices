@@ -17,4 +17,10 @@ angular.module('myApp.templateDoctor', ['ngRoute'])
       $scope.continueRegistersPAvancesJuegos=function(){
       		$location.path("RegisterDoctorViewAvancesJuegos");
       };
+$scope.continueCommentRegisterDiagnosticos=function(){
+        $location.path("CommentRegisterDiagnosticos");
+  };
+  $scope.continueCommentViewDiagnosticos=function(){
+        $location.path("CommentsDoctorViewDiagnosticos");
+  };
 }]);

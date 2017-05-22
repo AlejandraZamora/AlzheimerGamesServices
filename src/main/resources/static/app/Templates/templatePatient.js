@@ -14,6 +14,9 @@ angular.module('myApp.templatePatient', ['ngRoute'])
             $location.path("HomePatient");
       };
       
+      $scope.continueCommentsDiagnosticos=function(){
+      	$location.path("CommentsViewDiagnosticos");
+      };
       $scope.continueCRegisterAvancesJuegos=function(){
             $location.path("ControlRegisterAvancesJuegos");
       };

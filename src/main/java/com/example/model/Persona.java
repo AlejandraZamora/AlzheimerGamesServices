@@ -72,4 +72,17 @@ this.edad = edad;
 			public void setAvancesJuegos(java.util.List<com.example.model.AvanceJuego> avancesJuegos) {
 			this.avancesJuegos = avancesJuegos;
 			}
+			@OneToMany(cascade = CascadeType.ALL)
+			@JoinColumns(
+					{
+							@JoinColumn(name = "diagnostico", referencedColumnName = "id", nullable = false),
+					}
+			)
+			private java.util.List<com.example.model.Diagnostico> diagnosticos =new java.util.ArrayList<com.example.model.Diagnostico>();
+			public java.util.List<com.example.model.Diagnostico> getDiagnosticos() {
+				return diagnosticos;
+			}
+			public void setDiagnosticos(java.util.ArrayList<com.example.model.Diagnostico> diagnosticos) {
+				this.diagnosticos = diagnosticos;
+			}
         }
