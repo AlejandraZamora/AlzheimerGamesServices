@@ -30,7 +30,7 @@ angular.module('myApp.RegistersInvestigatorViewAvancesJuegos', ['ngRoute'])
                     for (var i = 0; i < $scope.personasList.length; i++) {
                         if($scope.personasList[i].avancesJuegos.length >= 1){
                             $scope.personaAct=$scope.personasList[i];
-                            $scope.labels.push(i);
+                            $scope.labels.push(i+1);
                             var tiempoSegundosInitial=0;
                             var numeroPreguntasIntentosInitial=0;
                             var numeroPreguntasAciertosInitial=0;
@@ -41,7 +41,7 @@ angular.module('myApp.RegistersInvestigatorViewAvancesJuegos', ['ngRoute'])
                                 numeroPreguntasIntentosInitial=numeroPreguntasIntentosInitial+dd.numeroPreguntasIntentos;
                                 numeroPreguntasAciertosInitial=numeroPreguntasAciertosInitial+dd.numeroPreguntasAciertos;
                                 nivelMaximoAlcanzadoInitial=nivelMaximoAlcanzadoInitial+dd.nivelMaximoAlcanzado;
-                                $scope.principalAndDiagnostic.push([dd.nombreJuego
+                                $scope.principalAndDiagnostic.push([i+1,$scope.personaAct.edad,dd.nombreJuego
                                 , dd.tiempoSegundos
                                 , dd.numeroPreguntasIntentos
                                 , dd.numeroPreguntasAciertos
