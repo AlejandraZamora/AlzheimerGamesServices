@@ -22,14 +22,15 @@ Este se puede usar así:
 | `/persona/` | **GET** | Retorna todas las personas (Pacientes, Profesionales de saalud e investigadores) registradas. | | **List \<DataPOJO>** |
 | `/persona/` | **POST** | Guarda una persona nueva. | **DataPOJO** | |
 | `/persona/` | **PUT** | Actualiza la información de una persona registrada. | **DataPOJO** | |
-| `/persona/{personId}/` | **GET** | Retorna el recurso de persona específicado por el id| **Long** | **DataPOJO** |
+| `/persona/{personaId}/` | **GET** | Retorna el recurso de persona específicado por el id| **Long** | **DataPOJO** |
+| `/persona/` | **POST** | Guarda una persona nueva. | **TextPlainValue** | |
 
 
 ### Parametros de URL
 
 | Nombre | Tipo | Descripción |
 | :----- | :--- | :---------- |
-| *personId* | **Long**| Número de identificación de la persona o paciente. |
+| *personaId* | **Long**| Número de identificación de la persona o paciente. |
 
 ### Forma de datos
 
