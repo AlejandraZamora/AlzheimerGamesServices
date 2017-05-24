@@ -53,12 +53,12 @@ Este se puede usar así:
   
   	{
 		"id":Long,
-    		"nombreJuego":String,
-    		"tiempoSegundos":String,
-    		"numeroPreguntasIntentos":String,
-    		"numeroPreguntasAciertos":String,
+		"nombreJuego":String,
+		"tiempoSegundos":String,
+		"numeroPreguntasIntentos":String,
+		"numeroPreguntasAciertos":String,
 		"nivelMaximoAlcanzado:String,
-    		"date":Date
+		"date":Date
   	}
   
 #### Diagnostico
@@ -66,8 +66,8 @@ Este se puede usar así:
   	{
 		"id":Long,
 		"title":String,
-    		"descripcion":String,
-    		"date":Date,
+		"descripcion":String,
+		"date":Date,
   	}
 
 _______
