@@ -3,6 +3,9 @@ ___
 
 ## Diseño e implementación de una plataforma genérica para el desarrollo de aplicaciones de e-Health y m-Health 
 
+## Aplicación desplegada:
+http://alzheimergameservices.herokuapp.com
+
 ## API REST
 
 Tipo de datos manejado:  ***JSON***
@@ -23,7 +26,7 @@ Este se puede usar así:
 | `/persona/` | **POST** | Guarda una persona nueva. | **DataPOJO** | |
 | `/persona/` | **PUT** | Actualiza la información de una persona registrada. | **DataPOJO** | |
 | `/persona/{personaId}/` | **GET** | Retorna el recurso de persona específicado por el id| **Long** | **DataPOJO** |
-| `/persona/` | **POST** | Guarda una persona nueva. | **TextPlainValue** | |
+| `/persona/` | **POST** | Guarda la información de un juego nuevo para un paciente registrado. | **TextPlainValue** | |
 
 
 ### Parametros de URL
@@ -37,34 +40,34 @@ Este se puede usar así:
 #### Person
 
 	{	
-		"role":String,
-		"comments":List<Comment>,
 		"id":Long,
 		"name":String,
-		"firstName":String,
-		"address":Address,
-		"diagnostics":List<Diagnostic>,
-		"fullName":String
+		"password":String,
+		"role":String,
+		"edad":Integer,
+		"avancesJuegos":List<AvanceJuego>,
+		"diagnosticos":List<Diagnostico>,
 	}
 
-#### Diagnostic
+#### AvanceJuego
   
   	{
-		"diagnosticId":Long,
-    		"systolicPressure":Integer,
-    		"diastolicPressure":Integer,
-    		"bloodCholesterol":Integer,
-    		"heartRate":Integer,
+		"id":Long,
+    		"nombreJuego":String,
+    		"tiempoSegundos":String,
+    		"numeroPreguntasIntentos":String,
+    		"numeroPreguntasAciertos":String,
+		"nivelMaximoAlcanzado:String,
     		"date":Date
   	}
   
-#### Comment
+#### Diagnostico
 
   	{
-		"commentId":Long,
+		"id":Long,
+		"title":String,
+    		"descripcion":String,
     		"date":Date,
-    		"description":String,
-    		"title":String
   	}
 
 _______
@@ -85,7 +88,7 @@ _______
 
 Para descargar la aplicación siga estas instrucciones:
 
-1. Abrir el repositorio de la aplicación en GitHub. (https://github.com/AlejandraZamora/clientePaciente.git)
+1. Abrir el repositorio de la aplicación en GitHub. (https://github.com/AlejandraZamora/AlzheimerGamesServices.git)
 
 2. Copiar el enlace para clonar el proyecto
 
@@ -93,7 +96,7 @@ Para descargar la aplicación siga estas instrucciones:
 	- cd Directorio deseado
 
 4. Una vez ubicados en el directorio deseado procedemos a clonar el proyecto con el comando git clone y la dirección copiada anteriormente en la página del repositorio:
-	- git clone https://github.com/AlejandraZamora/clientePaciente.git
+	- git clone https://github.com/AlejandraZamora/AlzheimerGamesServices.git
 
 #### Ejecutar el proyecto de manera local
 
@@ -101,7 +104,7 @@ Para descargar la aplicación siga estas instrucciones:
 	- mvn compile
 	- mvn spring-boot:run
 Debemos ubicarnos en el directorio del proyecto:
-	- cd clientePaciente/
+	- cd AlzheimerGamesServices/
 
 2. Para probar el funcionamiento de la aplicación abrimos en el browser la dirección:
 	- http://localhost:8080/app/index.html
@@ -116,7 +119,7 @@ Debemos ubicarnos en el directorio del proyecto:
 	- cd DirectorioDeseado
 	- mkdir NombreCarpeta
 
-3. En la carpeta creada se deben copiar los archivos del repositorio (https://github.com/AlejandraZamora/clientePaciente.git) a excepción de la carpeta .git, el archivo README.md y el archivo .gitignore que se encuentran en el directorio raíz del proyecto.
+3. En la carpeta creada se deben copiar los archivos del repositorio (https://github.com/AlejandraZamora/AlzheimerGamesServices.git) a excepción de la carpeta .git, el archivo README.md y el archivo .gitignore que se encuentran en el directorio raíz del proyecto.
 
 4. Abrir la terminal y ubicarnos en el directorio de la carpeta creada antes con el comando cd:
 	- cd DirectorioProyecto
