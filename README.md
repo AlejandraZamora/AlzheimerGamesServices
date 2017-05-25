@@ -49,18 +49,31 @@ Este se puede usar así:
 		"diagnosticos":List<Diagnostico>,
 	}
 
-#### AvanceJuego
+#### AvanceJuegoCalculos
   
   	{
 		"id":Long,
-		"nombreJuego":String,
 		"tiempoSegundos":String,
 		"numeroPreguntasIntentos":String,
 		"numeroPreguntasAciertos":String,
+		"PorcentajeSumasResueltas":Integer,
+		"PorcentajeRestasResueltas":Integer,
+		"PorcentajeMultiplicacionesResueltas":Integer,
+		"PorcentajeDivisionesResueltas":Integer,
 		"nivelMaximoAlcanzado:String,
 		"date":Date
   	}
-  
+
+#### AvanceJuegoImagenes
+
+	{
+		"id":Long,
+		"tiempoSegundos":String,
+		"numeroPreguntasIntentos":String,
+		"numeroPreguntasAciertos":String,
+		"date":Date
+	}
+
 #### Diagnostico
 
   	{
