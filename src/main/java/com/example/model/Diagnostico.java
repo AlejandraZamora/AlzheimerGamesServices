@@ -1,25 +1,24 @@
-package
-        com.example.model;
-
-import javax.persistence.*;
-import java.util.Calendar;
-
-@Entity
-@Table(name = "diagnosticos", schema = "application")
+package 
+		com.example.model;
+	    
+	    import javax.persistence.*;
+	    import java.util.Calendar;
+	    @Entity
+	    @Table(name = "diagnosticos", schema = "application")
 public class Diagnostico {
-public Diagnostico(){}
-@Id
-@GeneratedValue(strategy = GenerationType.AUTO)
-@Column(name = "diagnostico_id")
-private Long id;
-
-public Long getId() {
-return id;
-}
-
-public void setId(Long id) {
-this.id = id;
-}
+	public Diagnostico(){}
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "diagnostico_id")
+	private Long id;
+		
+	public Long getId() {
+	return id;
+	}
+	
+	public void setId(Long id) {
+	this.id = id;
+	}
 @Column(name = "title")
 private String title;
 
@@ -50,4 +49,4 @@ return date;
 public void setDate(Calendar date) {
 this.date = date;
 }
-}
+        }

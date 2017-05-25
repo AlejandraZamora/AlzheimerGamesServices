@@ -1,15 +1,15 @@
-package
-        com.example.model;
+package 
+		com.example.model;
 	    
 	    import javax.persistence.*;
 	    import java.util.Calendar;
 	    @Entity
-	    @Table(name = "avanceJuegos", schema = "application")
-public class AvanceJuego {
-	public AvanceJuego(){}
+	    @Table(name = "avanceJuegoImageness", schema = "application")
+public class AvanceJuegoImagenes {
+	public AvanceJuegoImagenes(){}
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "avanceJuego_id")
+	@Column(name = "avanceJuegoImagenes_id")
 	private Long id;
 		
 	public Long getId() {
@@ -19,16 +19,6 @@ public class AvanceJuego {
 	public void setId(Long id) {
 	this.id = id;
 	}
-@Column(name = "nombreJuego")
-private String nombreJuego;
-
-public String getNombreJuego() {
-return nombreJuego;
-}
-
-public void setNombreJuego(String nombreJuego) {
-this.nombreJuego = nombreJuego;
-}
 @Column(name = "tiempoSegundos")
 private Integer tiempoSegundos;
 
@@ -58,16 +48,6 @@ return numeroPreguntasAciertos;
 
 public void setNumeroPreguntasAciertos(Integer numeroPreguntasAciertos) {
 this.numeroPreguntasAciertos = numeroPreguntasAciertos;
-}
-@Column(name = "nivelMaximoAlcanzado")
-private Integer nivelMaximoAlcanzado;
-
-public Integer getNivelMaximoAlcanzado() {
-return nivelMaximoAlcanzado;
-}
-
-public void setNivelMaximoAlcanzado(Integer nivelMaximoAlcanzado) {
-this.nivelMaximoAlcanzado = nivelMaximoAlcanzado;
 }
 @Column(name = "date")
 private Calendar date;

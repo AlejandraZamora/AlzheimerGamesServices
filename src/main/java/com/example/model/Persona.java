@@ -1,5 +1,5 @@
-package
-        com.example.model;
+package 
+		com.example.model;
 	    
 	    import javax.persistence.*;
 	    import java.util.Calendar;
@@ -62,17 +62,30 @@ this.edad = edad;
 @OneToMany(cascade = CascadeType.ALL)
 			@JoinColumns(
 					{
-							@JoinColumn(name = "avanceJuego", referencedColumnName = "id", nullable = false),
+							@JoinColumn(name = "avanceJuegoImagenes", referencedColumnName = "id", nullable = false),
 					}
 			)
-			private java.util.List<com.example.model.AvanceJuego> avancesJuegos =new java.util.ArrayList<com.example.model.AvanceJuego>();
-			public java.util.List<com.example.model.AvanceJuego> getAvancesJuegos() {
-			return avancesJuegos;
+			private java.util.List<com.example.model.AvanceJuegoImagenes> avancesJuegosImagenes =new java.util.ArrayList<com.example.model.AvanceJuegoImagenes>();
+			public java.util.List<com.example.model.AvanceJuegoImagenes> getAvancesJuegosImagenes() {
+			return avancesJuegosImagenes;
 			}
-			public void setAvancesJuegos(java.util.List<com.example.model.AvanceJuego> avancesJuegos) {
-			this.avancesJuegos = avancesJuegos;
+			public void setAvancesJuegosImagenes(java.util.ArrayList<com.example.model.AvanceJuegoImagenes> avancesJuegosImagenes) {
+			this.avancesJuegosImagenes = avancesJuegosImagenes;
 			}
-			@OneToMany(cascade = CascadeType.ALL)
+@OneToMany(cascade = CascadeType.ALL)
+			@JoinColumns(
+					{
+							@JoinColumn(name = "avanceJuegoCalculos", referencedColumnName = "id", nullable = false),
+					}
+			)
+			private java.util.List<com.example.model.AvanceJuegoCalculos> avancesJuegosCalculos =new java.util.ArrayList<com.example.model.AvanceJuegoCalculos>();
+			public java.util.List<com.example.model.AvanceJuegoCalculos> getAvancesJuegosCalculos() {
+			return avancesJuegosCalculos;
+			}
+			public void setAvancesJuegosCalculos(java.util.ArrayList<com.example.model.AvanceJuegoCalculos> avancesJuegosCalculos) {
+			this.avancesJuegosCalculos = avancesJuegosCalculos;
+			}
+@OneToMany(cascade = CascadeType.ALL)
 			@JoinColumns(
 					{
 							@JoinColumn(name = "diagnostico", referencedColumnName = "id", nullable = false),
@@ -80,9 +93,9 @@ this.edad = edad;
 			)
 			private java.util.List<com.example.model.Diagnostico> diagnosticos =new java.util.ArrayList<com.example.model.Diagnostico>();
 			public java.util.List<com.example.model.Diagnostico> getDiagnosticos() {
-				return diagnosticos;
+			return diagnosticos;
 			}
 			public void setDiagnosticos(java.util.ArrayList<com.example.model.Diagnostico> diagnosticos) {
-				this.diagnosticos = diagnosticos;
+			this.diagnosticos = diagnosticos;
 			}
         }

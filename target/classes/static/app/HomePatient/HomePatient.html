@@ -6,9 +6,34 @@
         </div>
         <!-- /.col-lg-12 -->
     </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa fa-comments fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">{{cantHDiagnosticos}}</div>
+                            <div>{{recomendacionesHDiagnosticos}}</div>
+                        </div>
+                    </div>
+                </div>
+                <a  ng-click="continueCSDiagnosticos()">
+                    <div class="panel-footer">
+                        <span class="pull-left">Detalles</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 	<div class="row">
 		<br>
-		<h2>Registros de AvancesJuegos</h2>
+		<h2>Registros de AvancesJuegosImagenes</h2>
 		<br>
 	    	<div class="col-lg-4">
 	    	<div class="panel panel-default">
@@ -16,8 +41,8 @@
 	                    TiempoSegundos
 	    	</div>
 	    	<div class="panel-body">
-	    	<canvas  id="tiempoSegundosAvancesJuegos" class="chart chart-bar"
-	    	chart-data="tiempoSegundosAvancesJuegos" chart-labels="labelsAvancesJuegos" chart-series="seriesAvancesJuegos">
+	    	<canvas  id="tiempoSegundosAvancesJuegosImagenes" class="chart chart-bar"
+	    	chart-data="tiempoSegundosAvancesJuegosImagenes" chart-labels="labelsAvancesJuegosImagenes" chart-series="seriesAvancesJuegosImagenes">
 	    	</canvas>
 	    	</div>
 	    	<!-- /.panel-body -->
@@ -31,8 +56,8 @@
 	                    NumeroPreguntasIntentos
 	    	</div>
 	    	<div class="panel-body">
-	    	<canvas  id="numeroPreguntasIntentosAvancesJuegos" class="chart chart-bar"
-	    	chart-data="numeroPreguntasIntentosAvancesJuegos" chart-labels="labelsAvancesJuegos" chart-series="seriesAvancesJuegos">
+	    	<canvas  id="numeroPreguntasIntentosAvancesJuegosImagenes" class="chart chart-bar"
+	    	chart-data="numeroPreguntasIntentosAvancesJuegosImagenes" chart-labels="labelsAvancesJuegosImagenes" chart-series="seriesAvancesJuegosImagenes">
 	    	</canvas>
 	    	</div>
 	    	<!-- /.panel-body -->
@@ -46,8 +71,118 @@
 	                    NumeroPreguntasAciertos
 	    	</div>
 	    	<div class="panel-body">
-	    	<canvas  id="numeroPreguntasAciertosAvancesJuegos" class="chart chart-bar"
-	    	chart-data="numeroPreguntasAciertosAvancesJuegos" chart-labels="labelsAvancesJuegos" chart-series="seriesAvancesJuegos">
+	    	<canvas  id="numeroPreguntasAciertosAvancesJuegosImagenes" class="chart chart-bar"
+	    	chart-data="numeroPreguntasAciertosAvancesJuegosImagenes" chart-labels="labelsAvancesJuegosImagenes" chart-series="seriesAvancesJuegosImagenes">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	</div>
+	<div class="row">
+		<br>
+		<h2>Registros de AvancesJuegosCalculos</h2>
+		<br>
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    TiempoSegundos
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="tiempoSegundosAvancesJuegosCalculos" class="chart chart-bar"
+	    	chart-data="tiempoSegundosAvancesJuegosCalculos" chart-labels="labelsAvancesJuegosCalculos" chart-series="seriesAvancesJuegosCalculos">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    NumeroPreguntasIntentos
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="numeroPreguntasIntentosAvancesJuegosCalculos" class="chart chart-bar"
+	    	chart-data="numeroPreguntasIntentosAvancesJuegosCalculos" chart-labels="labelsAvancesJuegosCalculos" chart-series="seriesAvancesJuegosCalculos">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    NumeroPreguntasAciertos
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="numeroPreguntasAciertosAvancesJuegosCalculos" class="chart chart-bar"
+	    	chart-data="numeroPreguntasAciertosAvancesJuegosCalculos" chart-labels="labelsAvancesJuegosCalculos" chart-series="seriesAvancesJuegosCalculos">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    PorcentajeSumasResueltas
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="porcentajeSumasResueltasAvancesJuegosCalculos" class="chart chart-bar"
+	    	chart-data="porcentajeSumasResueltasAvancesJuegosCalculos" chart-labels="labelsAvancesJuegosCalculos" chart-series="seriesAvancesJuegosCalculos">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    PorcentajeRestasResueltas
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="porcentajeRestasResueltasAvancesJuegosCalculos" class="chart chart-bar"
+	    	chart-data="porcentajeRestasResueltasAvancesJuegosCalculos" chart-labels="labelsAvancesJuegosCalculos" chart-series="seriesAvancesJuegosCalculos">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    PorcentajeMultiplicacionesResueltas
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="porcentajeMultiplicacionesResueltasAvancesJuegosCalculos" class="chart chart-bar"
+	    	chart-data="porcentajeMultiplicacionesResueltasAvancesJuegosCalculos" chart-labels="labelsAvancesJuegosCalculos" chart-series="seriesAvancesJuegosCalculos">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    PorcentajeDivisionesResueltas
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="porcentajeDivisionesResueltasAvancesJuegosCalculos" class="chart chart-bar"
+	    	chart-data="porcentajeDivisionesResueltasAvancesJuegosCalculos" chart-labels="labelsAvancesJuegosCalculos" chart-series="seriesAvancesJuegosCalculos">
 	    	</canvas>
 	    	</div>
 	    	<!-- /.panel-body -->
@@ -61,8 +196,8 @@
 	                    NivelMaximoAlcanzado
 	    	</div>
 	    	<div class="panel-body">
-	    	<canvas  id="nivelMaximoAlcanzadoAvancesJuegos" class="chart chart-bar"
-	    	chart-data="nivelMaximoAlcanzadoAvancesJuegos" chart-labels="labelsAvancesJuegos" chart-series="seriesAvancesJuegos">
+	    	<canvas  id="nivelMaximoAlcanzadoAvancesJuegosCalculos" class="chart chart-bar"
+	    	chart-data="nivelMaximoAlcanzadoAvancesJuegosCalculos" chart-labels="labelsAvancesJuegosCalculos" chart-series="seriesAvancesJuegosCalculos">
 	    	</canvas>
 	    	</div>
 	    	<!-- /.panel-body -->

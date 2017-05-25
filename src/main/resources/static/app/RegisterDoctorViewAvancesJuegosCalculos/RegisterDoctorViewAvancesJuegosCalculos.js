@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('myApp.RegisterDoctorViewAvancesJuegos', ['ngRoute'])
+angular.module('myApp.RegisterDoctorViewAvancesJuegosCalculos', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/RegisterDoctorViewAvancesJuegos', {
-    templateUrl: 'RegisterDoctorViewAvancesJuegos/RegisterDoctorViewAvancesJuegos.html',
-    controller: 'RegisterDoctorViewAvancesJuegosCtrl'
+  $routeProvider.when('/RegisterDoctorViewAvancesJuegosCalculos', {
+    templateUrl: 'RegisterDoctorViewAvancesJuegosCalculos/RegisterDoctorViewAvancesJuegosCalculos.html',
+    controller: 'RegisterDoctorViewAvancesJuegosCalculosCtrl'
   });
 }])
 
-.controller('RegisterDoctorViewAvancesJuegosCtrl', ['$rootScope', '$scope', 'persona', 'personas', function ($rootScope, $scope, persona, personas) {
+.controller('RegisterDoctorViewAvancesJuegosCalculosCtrl', ['$rootScope', '$scope', 'persona', 'personas', function ($rootScope, $scope, persona, personas) {
 
     $scope.foundRD=$rootScope.FindID;
     persona.get({personaId:""+$rootScope.patientId})
@@ -17,14 +17,18 @@ angular.module('myApp.RegisterDoctorViewAvancesJuegos', ['ngRoute'])
             //success
             function( value ){
                 $scope.principal=value;
-                $scope.diagnostics=$scope.principal.avancesJuegos;
+                $scope.diagnostics=$scope.principal.avancesJuegosCalculos;
 $scope.tiempoSegundos=[];
 $scope.numeroPreguntasIntentos=[];
 $scope.numeroPreguntasAciertos=[];
+$scope.porcentajeSumasResueltas=[];
+$scope.porcentajeRestasResueltas=[];
+$scope.porcentajeMultiplicacionesResueltas=[];
+$scope.porcentajeDivisionesResueltas=[];
 $scope.nivelMaximoAlcanzado=[];
 				$scope.diagnosticsNew=[];
                 $scope.labels=[];
-                $scope.series = ['Datos de Control AvancesJuegos'];
+                $scope.series = ['Datos de Control AvancesJuegosCalculos'];
                 $scope.diagnostics.orderByDate("date", -1);
 				$scope.currentDate=new Date();
                 for(var n=0; n<$scope.diagnostics.length; n++){
@@ -35,6 +39,10 @@ $scope.nivelMaximoAlcanzado=[];
 $scope.tiempoSegundos.push(dd.tiempoSegundos);
 $scope.numeroPreguntasIntentos.push(dd.numeroPreguntasIntentos);
 $scope.numeroPreguntasAciertos.push(dd.numeroPreguntasAciertos);
+$scope.porcentajeSumasResueltas.push(dd.porcentajeSumasResueltas);
+$scope.porcentajeRestasResueltas.push(dd.porcentajeRestasResueltas);
+$scope.porcentajeMultiplicacionesResueltas.push(dd.porcentajeMultiplicacionesResueltas);
+$scope.porcentajeDivisionesResueltas.push(dd.porcentajeDivisionesResueltas);
 $scope.nivelMaximoAlcanzado.push(dd.nivelMaximoAlcanzado);
 	                    var datee=new Date(dd.date);
 	                    var dia = datee.getDate();

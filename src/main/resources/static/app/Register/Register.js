@@ -22,7 +22,9 @@ $scope.edad=null;
 			, "password":$scope.password
 			, "role":$scope.role
 			, "edad":$scope.edad
-			, "avancesJuegos":[]
+			, "avancesJuegosImagenes":[]
+			, "avancesJuegosCalculos":[]
+			, "diagnosticos":[]
 			};
 			
 			if($rootScope.persona.role=="Paciente"){

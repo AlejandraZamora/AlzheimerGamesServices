@@ -1,6 +1,5 @@
 package com.example.controller;
 
-import com.example.model.AvanceJuego;
 import com.example.model.Persona;
 import com.example.services.PersonaServices;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -10,9 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 

@@ -2,7 +2,7 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Tus datos de control de AvancesJuegos</h1>
+            <h1 class="page-header">Tus datos de control de AvancesJuegosCalculos</h1>
         </div>
         <!-- /.col-lg-12 -->
     </div>
@@ -21,20 +21,26 @@
                         <thead>
                         <tr>
                             <th>Fecha de control</th>
-                            <th>NombreJuego</th>
                             <th>TiempoSegundos</th>
                             <th>NumeroPreguntasIntentos</th>
                             <th>NumeroPreguntasAciertos</th>
+                            <th>PorcentajeSumasResueltas</th>
+                            <th>PorcentajeRestasResueltas</th>
+                            <th>PorcentajeMultiplicacionesResueltas</th>
+                            <th>PorcentajeDivisionesResueltas</th>
                             <th>NivelMaximoAlcanzado</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr ng-repeat="d in diagnosticsNew | filter: busqueda" >
                             <td>{{d.date | date:"dd/MMMM/yyyy"}}</td>
-                            <td>{{d.nombreJuego}}</td>
                             <td>{{d.tiempoSegundos}}</td>
                             <td>{{d.numeroPreguntasIntentos}}</td>
                             <td>{{d.numeroPreguntasAciertos}}</td>
+                            <td>{{d.porcentajeSumasResueltas}}</td>
+                            <td>{{d.porcentajeRestasResueltas}}</td>
+                            <td>{{d.porcentajeMultiplicacionesResueltas}}</td>
+                            <td>{{d.porcentajeDivisionesResueltas}}</td>
                             <td>{{d.nivelMaximoAlcanzado}}</td>
                         </tr>
                         </tbody>
@@ -87,6 +93,66 @@
 	    <div class="panel-body">
 	    <canvas  id="numeroPreguntasAciertos" class="chart chart-bar"
 	    chart-data="numeroPreguntasAciertos" chart-labels="labels" chart-series="series">
+	    </canvas>
+	    </div>
+	    <!-- /.panel-body -->
+	    </div>
+	    <!-- /.panel -->
+	    </div>
+	    <!-- /.col-lg-4 -->
+	    <div class="col-lg-4">
+	    <div class="panel panel-default">
+	    <div class="panel-heading">
+	    PorcentajeSumasResueltas
+	    </div>
+	    <div class="panel-body">
+	    <canvas  id="porcentajeSumasResueltas" class="chart chart-bar"
+	    chart-data="porcentajeSumasResueltas" chart-labels="labels" chart-series="series">
+	    </canvas>
+	    </div>
+	    <!-- /.panel-body -->
+	    </div>
+	    <!-- /.panel -->
+	    </div>
+	    <!-- /.col-lg-4 -->
+	    <div class="col-lg-4">
+	    <div class="panel panel-default">
+	    <div class="panel-heading">
+	    PorcentajeRestasResueltas
+	    </div>
+	    <div class="panel-body">
+	    <canvas  id="porcentajeRestasResueltas" class="chart chart-bar"
+	    chart-data="porcentajeRestasResueltas" chart-labels="labels" chart-series="series">
+	    </canvas>
+	    </div>
+	    <!-- /.panel-body -->
+	    </div>
+	    <!-- /.panel -->
+	    </div>
+	    <!-- /.col-lg-4 -->
+	    <div class="col-lg-4">
+	    <div class="panel panel-default">
+	    <div class="panel-heading">
+	    PorcentajeMultiplicacionesResueltas
+	    </div>
+	    <div class="panel-body">
+	    <canvas  id="porcentajeMultiplicacionesResueltas" class="chart chart-bar"
+	    chart-data="porcentajeMultiplicacionesResueltas" chart-labels="labels" chart-series="series">
+	    </canvas>
+	    </div>
+	    <!-- /.panel-body -->
+	    </div>
+	    <!-- /.panel -->
+	    </div>
+	    <!-- /.col-lg-4 -->
+	    <div class="col-lg-4">
+	    <div class="panel panel-default">
+	    <div class="panel-heading">
+	    PorcentajeDivisionesResueltas
+	    </div>
+	    <div class="panel-body">
+	    <canvas  id="porcentajeDivisionesResueltas" class="chart chart-bar"
+	    chart-data="porcentajeDivisionesResueltas" chart-labels="labels" chart-series="series">
 	    </canvas>
 	    </div>
 	    <!-- /.panel-body -->

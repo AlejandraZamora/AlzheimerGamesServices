@@ -1,30 +1,27 @@
 'use strict';
 
-angular.module('myApp.RegisterDoctorViewAvancesJuegos', ['ngRoute'])
+angular.module('myApp.ControlViewAvancesJuegosImagenes', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/RegisterDoctorViewAvancesJuegos', {
-    templateUrl: 'RegisterDoctorViewAvancesJuegos/RegisterDoctorViewAvancesJuegos.html',
-    controller: 'RegisterDoctorViewAvancesJuegosCtrl'
+  $routeProvider.when('/ControlViewAvancesJuegosImagenes', {
+    templateUrl: 'ControlViewAvancesJuegosImagenes/ControlViewAvancesJuegosImagenes.html',
+    controller: 'ControlViewAvancesJuegosImagenesCtrl'
   });
 }])
 
-.controller('RegisterDoctorViewAvancesJuegosCtrl', ['$rootScope', '$scope', 'persona', 'personas', function ($rootScope, $scope, persona, personas) {
-
-    $scope.foundRD=$rootScope.FindID;
-    persona.get({personaId:""+$rootScope.patientId})
+.controller('ControlViewAvancesJuegosImagenesCtrl', ['$rootScope', '$scope', 'persona', function ($rootScope, $scope, persona) {
+    persona.get({personaId:""+$rootScope.idPersona})
     .$promise.then(
             //success
             function( value ){
-                $scope.principal=value;
-                $scope.diagnostics=$scope.principal.avancesJuegos;
+                $scope.persona=value;
+                $scope.diagnostics=$scope.persona.avancesJuegosImagenes;
 $scope.tiempoSegundos=[];
 $scope.numeroPreguntasIntentos=[];
 $scope.numeroPreguntasAciertos=[];
-$scope.nivelMaximoAlcanzado=[];
 				$scope.diagnosticsNew=[];
                 $scope.labels=[];
-                $scope.series = ['Datos de Control AvancesJuegos'];
+                $scope.series = ['Datos de Control'];
                 $scope.diagnostics.orderByDate("date", -1);
 				$scope.currentDate=new Date();
                 for(var n=0; n<$scope.diagnostics.length; n++){
@@ -35,30 +32,27 @@ $scope.nivelMaximoAlcanzado=[];
 $scope.tiempoSegundos.push(dd.tiempoSegundos);
 $scope.numeroPreguntasIntentos.push(dd.numeroPreguntasIntentos);
 $scope.numeroPreguntasAciertos.push(dd.numeroPreguntasAciertos);
-$scope.nivelMaximoAlcanzado.push(dd.nivelMaximoAlcanzado);
 	                    var datee=new Date(dd.date);
 	                    var dia = datee.getDate();
 	                    var mes = parseInt(datee.getMonth()) + 1;
 	                    var year = datee.getFullYear();
 	                    var dated=dia+"/"+mes+"/"+year;
 	                    $scope.labels.push(dated);
-					}else{
-                        break;
-                    }
+                    }else{
+						break;
+					}
                 }
             },
             //error
             function( error ){
-                console.log("Error");
+                alert("Error");
             }
     );
-    
-    Array.prototype.orderByDate=function(p,so){
-      if(so!=-1&&so!=1)so=1;
-      this.sort(function(a,b){
-        var da=new Date(a[p]),db=new Date(b[p]);
-        return(da-db)*so;
-      })
-    };
-
+	Array.prototype.orderByDate=function(p,so){
+	  if(so!=-1&&so!=1)so=1;
+	  this.sort(function(a,b){
+	    var da=new Date(a[p]),db=new Date(b[p]);
+	    return(da-db)*so;
+	  })
+	};
 }]);

@@ -17,10 +17,16 @@ angular.module('myApp.templatePatient', ['ngRoute'])
       $scope.continueCommentsDiagnosticos=function(){
       	$location.path("CommentsViewDiagnosticos");
       };
-      $scope.continueCRegisterAvancesJuegos=function(){
-            $location.path("ControlRegisterAvancesJuegos");
+      $scope.continueCRegisterAvancesJuegosImagenes=function(){
+            $location.path("ControlRegisterAvancesJuegosImagenes");
       };
-      $scope.continueCViewAvancesJuegos=function(){
-            $location.path("ControlViewAvancesJuegos");
+      $scope.continueCViewAvancesJuegosImagenes=function(){
+            $location.path("ControlViewAvancesJuegosImagenes");
+      };
+      $scope.continueCRegisterAvancesJuegosCalculos=function(){
+            $location.path("ControlRegisterAvancesJuegosCalculos");
+      };
+      $scope.continueCViewAvancesJuegosCalculos=function(){
+            $location.path("ControlViewAvancesJuegosCalculos");
       };
 }]);

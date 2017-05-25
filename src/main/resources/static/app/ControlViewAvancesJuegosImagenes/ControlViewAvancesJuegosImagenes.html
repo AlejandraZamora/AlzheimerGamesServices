@@ -2,7 +2,7 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Tus datos de control de AvancesJuegos</h1>
+            <h1 class="page-header">Tus datos de control de AvancesJuegosImagenes</h1>
         </div>
         <!-- /.col-lg-12 -->
     </div>
@@ -21,21 +21,17 @@
                         <thead>
                         <tr>
                             <th>Fecha de control</th>
-                            <th>NombreJuego</th>
                             <th>TiempoSegundos</th>
                             <th>NumeroPreguntasIntentos</th>
                             <th>NumeroPreguntasAciertos</th>
-                            <th>NivelMaximoAlcanzado</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr ng-repeat="d in diagnosticsNew | filter: busqueda" >
                             <td>{{d.date | date:"dd/MMMM/yyyy"}}</td>
-                            <td>{{d.nombreJuego}}</td>
                             <td>{{d.tiempoSegundos}}</td>
                             <td>{{d.numeroPreguntasIntentos}}</td>
                             <td>{{d.numeroPreguntasAciertos}}</td>
-                            <td>{{d.nivelMaximoAlcanzado}}</td>
                         </tr>
                         </tbody>
                     </table>
@@ -87,21 +83,6 @@
 	    <div class="panel-body">
 	    <canvas  id="numeroPreguntasAciertos" class="chart chart-bar"
 	    chart-data="numeroPreguntasAciertos" chart-labels="labels" chart-series="series">
-	    </canvas>
-	    </div>
-	    <!-- /.panel-body -->
-	    </div>
-	    <!-- /.panel -->
-	    </div>
-	    <!-- /.col-lg-4 -->
-	    <div class="col-lg-4">
-	    <div class="panel panel-default">
-	    <div class="panel-heading">
-	    NivelMaximoAlcanzado
-	    </div>
-	    <div class="panel-body">
-	    <canvas  id="nivelMaximoAlcanzado" class="chart chart-bar"
-	    chart-data="nivelMaximoAlcanzado" chart-labels="labels" chart-series="series">
 	    </canvas>
 	    </div>
 	    <!-- /.panel-body -->

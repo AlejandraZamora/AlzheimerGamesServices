@@ -14,7 +14,10 @@ angular.module('myApp.templateInvestigator', ['ngRoute'])
       $scope.continueHomeI=function(){
             $location.path("HomeInvestigator");
       };
-	$scope.continueRegistersIAvancesJuegos=function(){
-	        $location.path("RegistersInvestigatorViewAvancesJuegos");
+	$scope.continueRegistersIAvancesJuegosImagenes=function(){
+	        $location.path("RegistersInvestigatorViewAvancesJuegosImagenes");
+	  };
+	$scope.continueRegistersIAvancesJuegosCalculos=function(){
+	        $location.path("RegistersInvestigatorViewAvancesJuegosCalculos");
 	  };
 }]);

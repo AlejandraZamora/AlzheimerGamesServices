@@ -26,27 +26,51 @@ angular.module('myApp.HomePatient', ['ngRoute'])
                             $scope.cantHDiagnosticos=$scope.commentsHDiagnosticos.length;
                         }
 
-						$scope.diagnosticsHAvancesJuegos=$scope.personaH.avancesJuegos;
-                            $scope.idAvancesJuegos=[];
-                            $scope.tiempoSegundosAvancesJuegos=[];
-                            $scope.numeroPreguntasIntentosAvancesJuegos=[];
-                            $scope.numeroPreguntasAciertosAvancesJuegos=[];
-                            $scope.nivelMaximoAlcanzadoAvancesJuegos=[];
-						$scope.labelsAvancesJuegos=[];
-						$scope.seriesAvancesJuegos = ['Datos de Control AvancesJuegos'];
-						for(var n=0; n<$scope.diagnosticsHAvancesJuegos.length; n++){
-							var dd=$scope.diagnosticsHAvancesJuegos[n];
-	                            $scope.idAvancesJuegos.push(dd.id);
-	                            $scope.tiempoSegundosAvancesJuegos.push(dd.tiempoSegundos);
-	                            $scope.numeroPreguntasIntentosAvancesJuegos.push(dd.numeroPreguntasIntentos);
-	                            $scope.numeroPreguntasAciertosAvancesJuegos.push(dd.numeroPreguntasAciertos);
-	                            $scope.nivelMaximoAlcanzadoAvancesJuegos.push(dd.nivelMaximoAlcanzado);
+						$scope.diagnosticsHAvancesJuegosImagenes=$scope.personaH.avancesJuegosImagenes;
+                            $scope.tiempoSegundosAvancesJuegosImagenes=[];
+                            $scope.numeroPreguntasIntentosAvancesJuegosImagenes=[];
+                            $scope.numeroPreguntasAciertosAvancesJuegosImagenes=[];
+						$scope.labelsAvancesJuegosImagenes=[];
+						$scope.seriesAvancesJuegosImagenes = ['Datos de Control AvancesJuegosImagenes'];
+						for(var n=0; n<$scope.diagnosticsHAvancesJuegosImagenes.length; n++){
+							var dd=$scope.diagnosticsHAvancesJuegosImagenes[n];
+	                            $scope.tiempoSegundosAvancesJuegosImagenes.push(dd.tiempoSegundos);
+	                            $scope.numeroPreguntasIntentosAvancesJuegosImagenes.push(dd.numeroPreguntasIntentos);
+	                            $scope.numeroPreguntasAciertosAvancesJuegosImagenes.push(dd.numeroPreguntasAciertos);
 							var datee=new Date(dd.date);
 							var dia = datee.getDate();
 							var mes = parseInt(datee.getMonth()) + 1;
 							var year = datee.getFullYear();
 							var dated=dia+"/"+mes+"/"+year;
-							$scope.labelsAvancesJuegos.push(dated);
+							$scope.labelsAvancesJuegosImagenes.push(dated);
+						}
+						$scope.diagnosticsHAvancesJuegosCalculos=$scope.personaH.avancesJuegosCalculos;
+                            $scope.tiempoSegundosAvancesJuegosCalculos=[];
+                            $scope.numeroPreguntasIntentosAvancesJuegosCalculos=[];
+                            $scope.numeroPreguntasAciertosAvancesJuegosCalculos=[];
+                            $scope.porcentajeSumasResueltasAvancesJuegosCalculos=[];
+                            $scope.porcentajeRestasResueltasAvancesJuegosCalculos=[];
+                            $scope.porcentajeMultiplicacionesResueltasAvancesJuegosCalculos=[];
+                            $scope.porcentajeDivisionesResueltasAvancesJuegosCalculos=[];
+                            $scope.nivelMaximoAlcanzadoAvancesJuegosCalculos=[];
+						$scope.labelsAvancesJuegosCalculos=[];
+						$scope.seriesAvancesJuegosCalculos = ['Datos de Control AvancesJuegosCalculos'];
+						for(var n=0; n<$scope.diagnosticsHAvancesJuegosCalculos.length; n++){
+							var dd=$scope.diagnosticsHAvancesJuegosCalculos[n];
+	                            $scope.tiempoSegundosAvancesJuegosCalculos.push(dd.tiempoSegundos);
+	                            $scope.numeroPreguntasIntentosAvancesJuegosCalculos.push(dd.numeroPreguntasIntentos);
+	                            $scope.numeroPreguntasAciertosAvancesJuegosCalculos.push(dd.numeroPreguntasAciertos);
+	                            $scope.porcentajeSumasResueltasAvancesJuegosCalculos.push(dd.porcentajeSumasResueltas);
+	                            $scope.porcentajeRestasResueltasAvancesJuegosCalculos.push(dd.porcentajeRestasResueltas);
+	                            $scope.porcentajeMultiplicacionesResueltasAvancesJuegosCalculos.push(dd.porcentajeMultiplicacionesResueltas);
+	                            $scope.porcentajeDivisionesResueltasAvancesJuegosCalculos.push(dd.porcentajeDivisionesResueltas);
+	                            $scope.nivelMaximoAlcanzadoAvancesJuegosCalculos.push(dd.nivelMaximoAlcanzado);
+							var datee=new Date(dd.date);
+							var dia = datee.getDate();
+							var mes = parseInt(datee.getMonth()) + 1;
+							var year = datee.getFullYear();
+							var dated=dia+"/"+mes+"/"+year;
+							$scope.labelsAvancesJuegosCalculos.push(dated);
 						}
                     },
                     //error

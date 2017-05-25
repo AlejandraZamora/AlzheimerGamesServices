@@ -2,10 +2,14 @@
 
 angular.module('myApp', [
   'ngRoute',
-  'myApp.RegistersInvestigatorViewAvancesJuegos',
-  'myApp.RegisterDoctorViewAvancesJuegos',
-  'myApp.ControlRegisterAvancesJuegos',
-  'myApp.ControlViewAvancesJuegos',
+  'myApp.RegistersInvestigatorViewAvancesJuegosImagenes',
+  'myApp.RegisterDoctorViewAvancesJuegosImagenes',
+  'myApp.ControlRegisterAvancesJuegosImagenes',
+  'myApp.ControlViewAvancesJuegosImagenes',
+  'myApp.RegistersInvestigatorViewAvancesJuegosCalculos',
+  'myApp.RegisterDoctorViewAvancesJuegosCalculos',
+  'myApp.ControlRegisterAvancesJuegosCalculos',
+  'myApp.ControlViewAvancesJuegosCalculos',
   'myApp.CommentsDoctorViewDiagnosticos',
   'myApp.CommentRegisterDiagnosticos',
   'myApp.CommentsViewDiagnosticos',

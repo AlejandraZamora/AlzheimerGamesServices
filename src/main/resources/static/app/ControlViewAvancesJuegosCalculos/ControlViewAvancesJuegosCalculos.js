@@ -1,25 +1,28 @@
 'use strict';
 
-angular.module('myApp.ControlViewAvancesJuegos', ['ngRoute'])
+angular.module('myApp.ControlViewAvancesJuegosCalculos', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/ControlViewAvancesJuegos', {
-    templateUrl: 'ControlViewAvancesJuegos/ControlViewAvancesJuegos.html',
-    controller: 'ControlViewAvancesJuegosCtrl'
+  $routeProvider.when('/ControlViewAvancesJuegosCalculos', {
+    templateUrl: 'ControlViewAvancesJuegosCalculos/ControlViewAvancesJuegosCalculos.html',
+    controller: 'ControlViewAvancesJuegosCalculosCtrl'
   });
 }])
 
-.controller('ControlViewAvancesJuegosCtrl', ['$rootScope', '$scope', 'persona', function ($rootScope, $scope, persona) {
+.controller('ControlViewAvancesJuegosCalculosCtrl', ['$rootScope', '$scope', 'persona', function ($rootScope, $scope, persona) {
     persona.get({personaId:""+$rootScope.idPersona})
     .$promise.then(
             //success
             function( value ){
                 $scope.persona=value;
-                $scope.diagnostics=$scope.persona.avancesJuegos;
-$scope.nombreJuego=[];
+                $scope.diagnostics=$scope.persona.avancesJuegosCalculos;
 $scope.tiempoSegundos=[];
 $scope.numeroPreguntasIntentos=[];
 $scope.numeroPreguntasAciertos=[];
+$scope.porcentajeSumasResueltas=[];
+$scope.porcentajeRestasResueltas=[];
+$scope.porcentajeMultiplicacionesResueltas=[];
+$scope.porcentajeDivisionesResueltas=[];
 $scope.nivelMaximoAlcanzado=[];
 				$scope.diagnosticsNew=[];
                 $scope.labels=[];
@@ -34,6 +37,10 @@ $scope.nivelMaximoAlcanzado=[];
 $scope.tiempoSegundos.push(dd.tiempoSegundos);
 $scope.numeroPreguntasIntentos.push(dd.numeroPreguntasIntentos);
 $scope.numeroPreguntasAciertos.push(dd.numeroPreguntasAciertos);
+$scope.porcentajeSumasResueltas.push(dd.porcentajeSumasResueltas);
+$scope.porcentajeRestasResueltas.push(dd.porcentajeRestasResueltas);
+$scope.porcentajeMultiplicacionesResueltas.push(dd.porcentajeMultiplicacionesResueltas);
+$scope.porcentajeDivisionesResueltas.push(dd.porcentajeDivisionesResueltas);
 $scope.nivelMaximoAlcanzado.push(dd.nivelMaximoAlcanzado);
 	                    var datee=new Date(dd.date);
 	                    var dia = datee.getDate();
