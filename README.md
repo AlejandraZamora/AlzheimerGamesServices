@@ -45,7 +45,8 @@ Este se puede usar así:
 		"password":String,
 		"role":String,
 		"edad":Integer,
-		"avancesJuegos":List<AvanceJuego>,
+		"avancesJuegosCalculos":List<AvanceJuegoCalculos>,
+		"avancesJuegosImagenes":List<AvanceJuegoImagenes>,
 		"diagnosticos":List<Diagnostico>,
 	}
 
