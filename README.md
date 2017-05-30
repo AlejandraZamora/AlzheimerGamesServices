@@ -6,6 +6,10 @@ ___
 ## Aplicación desplegada:
 http://alzheimergameservices.herokuapp.com
 
+
+## Guía para el desarrollador
+___
+
 ## API REST
 
 Tipo de datos manejado:  ***JSON***
